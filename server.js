@@ -45,7 +45,6 @@ app.post("/api/payment/generate-link", async (req, res) => {
       callback_method: "get"
     });
 
-   
     res.status(200).json({ success: true, short_url: paymentLink.short_url });
 
   } catch (error) {
